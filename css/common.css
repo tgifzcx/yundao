@@ -1,0 +1,123 @@
+/* 各个页面相同的样式表，例如网页头部尾部 */
+/* 版心 */
+.wapper {
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 1200px;
+    height: 100px;
+}
+
+.logo {
+    float: left;
+    width: 223px;
+    height: 100px;
+}
+
+/* logo搜索引擎优化做法 */
+.logo h1 {
+    width: 223px;
+    height: 100px;
+}
+
+.logo h1 a {
+    display: block;
+    width: 223px;
+    height: 100px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 0;
+}
+
+.nav {
+    float: right;
+    height: 100px;
+}
+
+/*下拉菜单 */
+.ul_1>li {
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 80px;
+    height: 100px;
+}
+
+.ul_1>li>a {
+    display: block;
+    width: 80px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.ul_1>li>a:hover {
+    background-color: #eee;
+    color: rgb(77, 145, 246);
+}
+
+.ul_1 ul {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    border-left: 2px solid #4d91f5;
+    border-right: 2px solid #4d91f5;
+}
+
+.ul_1 ul li {
+    background-color: #fff;
+    border-bottom: 2px solid #4d91f5;
+}
+
+.ul_1 ul li:hover {
+    background-color: #eee;
+}
+
+.ul_1 ul li a:hover {
+    color: rgb(77, 145, 246);
+}
+
+
+/* 版权区域 */
+.footer {
+    height: 200px;
+    background-color: #232425;
+}
+
+.footer .wapper {
+    width: 580px;
+}
+
+.footer .top {
+    height: 100px;
+    padding-top: 68px;
+}
+
+.footer li {
+    float: left;
+}
+
+.footer li a {
+    font-size: 14px;
+    color: #fff;
+    padding: 0 12px;
+    border-right: 1px solid #fff;
+}
+
+.footer li:nth-child(7) a {
+    border: none;
+}
+
+.footer li a:hover {
+    color: #2288f6;
+    text-decoration: underline;
+}
+
+.footer .bottom p {
+    margin-top: 20px;
+    color: #888888;
+}

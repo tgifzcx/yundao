@@ -1,0 +1,317 @@
+/* banner */
+.banner {
+    position: relative;
+    width: 1340px;
+    height: 430px;
+    overflow: hidden;
+}
+
+/* 左右侧按钮 */
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 60px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 2;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.banner ul {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    /* 使ul宽度远大于banner,以次放下三张轮播图片 */
+    width: 400%;
+}
+
+.banner ul li {
+    float: left;
+}
+
+.banner li img {
+    width: 1340px;
+    height: 430px;
+}
+
+/* 圆点 */
+.banner ol {
+    position: absolute;
+    left: 650px;
+    bottom: 20px;
+    height: 10px;
+}
+
+.banner ol li {
+    float: left;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    /* 将移动到小圆点位置的箭头变成手 */
+    cursor: pointer;
+}
+
+.banner ol .current {
+    background-color: #fff;
+}
+
+/* 我们的服务 */
+.serve {
+    position: relative;
+    width: 1000px;
+    height: 180px;
+    margin-top: 40px;
+}
+
+.serve .top {
+    width: 1000px;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.serve img {
+    position: absolute;
+    top: 25px;
+    left: 416px;
+}
+
+.serve .bottom {
+    width: 1000px;
+    height: 90px;
+    margin-top: 40px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+.content {
+    width: 1000px;
+    height: 510px;
+}
+
+.content li {
+    float: left;
+    width: 320px;
+    height: 510px;
+    margin-right: 20px;
+    background-color: #fff;
+    border: 1px solid #e7e8e9;
+}
+
+.content li:last-child {
+    margin-right: 0;
+}
+
+.content li img {
+    width: 248px;
+    height: 132px;
+    margin: 40px 36px;
+}
+
+.content li h3 {
+    text-align: center;
+    font-weight: normal;
+    height: 40px;
+}
+
+.content li p {
+    height: 123px;
+    margin: 0 43px;
+    font-size: 12px;
+    color: #666;
+    line-height: 25px;
+}
+
+.content li a {
+    display: block;
+    width: 148px;
+    height: 38px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 12px;
+    color: #ff9412;
+    border: 1px solid #ff9412;
+    border-radius: 5px;
+}
+
+.content li a:hover {
+    background-color: #ff9412;
+    color: #fff;
+}
+
+/* 经典案例 */
+.case {
+    background-color: #fff;
+}
+
+.case .wapper {
+    position: relative;
+    width: 1000px;
+    height: 150px;
+    margin-top: 75px;
+}
+
+.case .wapper .top {
+    width: 1000px;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.case .wapper img {
+    position: absolute;
+    top: 25px;
+    left: 416px;
+}
+
+.case .active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1205px;
+    height: 240px;
+    margin: 0 auto;
+}
+
+.case .active .case_pic li {
+    position: relative;
+    float: left;
+    margin-left: 36px;
+}
+
+.case .active .case_pic li:first-child {
+    margin-left: 0;
+}
+
+.case .active .case_pic img {
+    width: 322px;
+    height: 211px;
+}
+
+.case .active .case_pic li p {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    line-height: 45px;
+    background-color: rgba(6, 6, 6, 0.3);
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+}
+
+.case .active .case_pic li:hover .mask1 {
+    opacity: 1;
+}
+
+.case .active .case_pic .mask1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 322px;
+    height: 211px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 默认状态下,透明度为0 */
+    opacity: 0;
+}
+
+.case .active .case_pic .mask1 img {
+    margin-top: 70px;
+    margin-left: 125px;
+    width: 72px;
+    height: 72px;
+}
+
+.case .active a {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 60px;
+    text-align: center;
+    background-color: rgba(6, 6, 6, 0.1);
+}
+
+.case .active a img {
+    height: 50%;
+}
+
+.case .active a:hover {
+    background-color: #78baf2;
+}
+
+/* 合作媒体 */
+.mediapart .wapper {
+    position: relative;
+    width: 1000px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.mediapart .wapper .top {
+    width: 1000px;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mediapart .wapper img {
+    position: absolute;
+    top: 25px;
+    left: 428px;
+}
+
+.mediapart .bd {
+    width: 1000px;
+    height: 315px;
+    margin: 0 auto;
+}
+
+.mediapart .bd li {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 81px;
+    border-right: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+}
+
+.mediapart .bd li:nth-child(5n+5) {
+    border-right: none;
+}
+
+.mediapart .bd li:nth-child(n+11) {
+    border-bottom: none;
+}
+
+.mediapart .bd li a {
+    position: relative;
+}
+
+.mediapart .bd li .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 81px;
+    opacity: 0;
+}
+
+.mediapart .bd li:hover .mask {
+    opacity: 1;
+}
